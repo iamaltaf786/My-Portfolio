@@ -1,5 +1,5 @@
 # Simplefolio ⚡️
-## A minimal portfolio 
+## Personal portfolio 
 
 <h2 align="center">
   <img src="assets/pro-3.png" alt="Simplefolio" width="1200px" />
