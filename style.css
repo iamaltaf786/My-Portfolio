@@ -176,6 +176,11 @@ section {
   margin: auto 0;
 }
 
+#myImage-2 {
+  height: 350px;
+  width: 350px;
+}
+
 #myImage {
   border: 3px solid #2d2e32;
   animation: myImage 8s ease-in-out infinite;
