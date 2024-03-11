@@ -37,9 +37,10 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 75px;
+  margin: 0 10px;
 
   position: sticky;
-  top: 6px;
+  top: 10px;
   z-index: 1;
   
   background-color: lightgrey;
@@ -59,7 +60,7 @@ a {
 }
 
 a:hover {
-  color: grey;
+  color: white;
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
