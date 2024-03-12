@@ -420,7 +420,8 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 490px;
+  /* height: 490px; */
+  height: 300px;
 }
 
 .contact-info-upper-container {
@@ -446,6 +447,10 @@ article .icon {
   font-size: larger;
 }
 
+.contact-info-container p a:hover {
+  color:red;
+}
+
 .contact-icon {
   cursor: default;
 }
@@ -457,10 +462,19 @@ article .icon {
 /* FOOTER SECTION */
 
 footer {
-  height: 180px;
-  margin: 0 1rem;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  bottom: 0;
+  box-shadow: 0 -3px 3px 0 rgba(51, 49, 49, 0.15);
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
 }
 
-footer p {
+/* footer p {
   text-align: center;
-}
+} */
