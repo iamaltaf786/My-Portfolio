@@ -351,6 +351,7 @@ section {
 
 #experience {
   position: relative;
+  background-color: aquamarine;
 }
 
 .experience-sub-title {
@@ -385,6 +386,27 @@ article {
 
 article .icon {
   cursor: default;
+}
+
+.experience_tech {
+  margin-top: 30px;
+}
+
+.experience_tech ul li{
+  list-style: none;
+  margin: 15px 0;
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+}
+
+.skills p {
+  border-right: 2px solid rgba(45, 46, 50, .5);
+  margin-right: 70px;
+  padding-right: 20px;
+  font-weight: 600;
 }
 
 /* PROJECTS SECTION */
