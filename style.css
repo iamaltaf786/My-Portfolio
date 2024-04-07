@@ -170,7 +170,7 @@ section {
 
 /* PROFILE SECTION */
 
-#profile {
+#home {
   display: flex;
   justify-content: center;
   gap: 5rem;
@@ -356,6 +356,7 @@ section {
 }
 
 .experience {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin: 0 10rem;
