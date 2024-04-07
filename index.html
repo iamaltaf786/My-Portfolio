@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>My Portfolio</title>
+  <title>My Portfolio | SkillSet Layout Change</title>
 
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="mediaqueries.css" />
@@ -21,8 +21,8 @@
     <div>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#work">Work</a></li>
+        <li><a href="#experience">About Me</a></li>
+        <li><a href="#work">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -38,7 +38,7 @@
       </div>
       <div class="menu-links">
         <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">About Me</a></li>
         <li><a href="#work" onclick="toggleMenu()">Work</a></li>
         <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
       </div>
@@ -110,158 +110,67 @@
     <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
   </section>
 
-  <section id="experience">
-    <p class="section__text__p1">Explore My</p>
-    <h1 class="title">Tech Skills</h1>
-    <div class="experience_tech">
-      <ul>
-        <li>
+  <!-- Experience Section -->
 
-          <div class="skills">
-            <p>Languages</p>
-            <div class="logos">
-              <ul>
-                <li><img src="https://skillicons.dev/icons?i=c,cpp,js,html,css,java,sqlite" alt="skill-icon"></li>
-              </ul>
+  <section class="experience">
+    <p class="para">Explore My Skills</p>
+
+    <div class="listing_start">
+      <h1>Tech Skills</h1>
+      <div class="listOf">
+        <ul>
+          <li>
+
+            <div class="skills">
+              <div class="skill_topics">
+                <p>Languages</p>
+              </div>
+              <div>
+                <ul>
+                  <li><img src="https://skillicons.dev/icons?i=c,cpp,js,html,css,java,sqlite" alt="skill-icon"></li>
+                </ul>
+              </div>
             </div>
-          </div>
 
-        </li>
-        <li>
-          
-          <div class="skills">
-            <p>Developer Tools</p>
-            <div class="logos">
-              <ul>
-                <li><img src="https://skillicons.dev/icons?i=vscode,git,github,mysql" alt="skill-icon"></li>
-              </ul>
+          </li>
+          <li>
+
+            <div class="skills">
+              <div class="skill_topics">
+                <p>Developer Tools</p>
+              </div>
+              <div>
+                <ul>
+                  <li><img src="https://skillicons.dev/icons?i=vscode,git,github,mysql" alt="skill-icon"></li>
+                </ul>
+              </div>
             </div>
-          </div>
 
-        </li>
-        <li>
-             
-          <div class="skills">
-            <p>Library</p>
-            <div class="logos">
-              <ul>
-                <li><img src="https://skillicons.dev/icons?i=bootstrap" alt="skill-icon"></li>
-              </ul>
+          </li>
+          <li>
+
+            <div class="skills">
+              <div class="skill_topics">
+                <p>Library</p>
+              </div>
+              <div>
+                <ul>
+                  <li><img src="https://skillicons.dev/icons?i=bootstrap" alt="skill-icon"></li>
+                </ul>
+              </div>
             </div>
-          </div>
 
-        </li>
-      </ul>
-    </div>
-    <!-- <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">Frontend Development</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>HTML</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>CSS</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>JavaScript</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>SASS</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>TypeScript</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Material UI.</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <div class="details-container">
-          <h2 class="experience-sub-title">Frontend Development</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>PostgreSQL.</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Node JS.</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Express JS.</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>React JS.</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Git</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>GitHub</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
-    </div> -->
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#work'" />
+    </div>
+    
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#work'" />
   </section>
+
   <section id="projects">
     <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Work</h1>
+    <h1 class="title">Projects</h1>
     <div class="experience-details-container">
       <div class="about-containers">
         <div class="details-container color-container">
@@ -328,16 +237,7 @@
   </section>
 
   <footer>
-    <!-- <nav>
-      <div class="nav-links-container">
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav> -->
+  
     <h3>Made With
       <i class="fa fa-heart" style="font-size:20px;color:red"></i>
        Altaf Hussain</h3>
