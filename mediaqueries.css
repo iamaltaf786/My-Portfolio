@@ -1,6 +1,6 @@
 @media screen and (max-width: 1400px) {
   #profile {
-    height: 83vh;
+    height: 530px;
     margin-bottom: 6rem;
   }
   .about-containers {
@@ -49,7 +49,7 @@
     height: 40vh;
   }
   #profile {
-    height: 83vh;
+    height: 570px;
     margin-bottom: 0;
   }
   article {
@@ -95,5 +95,32 @@
   }
   .text-container {
     text-align: justify;
+  }
+
+  /* experience section */
+  .experience {
+    margin: 0;
+    width: 600px;
+  }
+
+  .listing_start {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .listOf {
+    margin-top: 20px;
+  }
+
+  .listOf ul li {
+    margin-bottom: 15px;
+  }
+
+  .listing_start h1 {
+    margin: 20px;
+  }
+
+  .skill_topics p {
+    margin-bottom: 10px;
   }
 }

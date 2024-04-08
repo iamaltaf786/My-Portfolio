@@ -36,7 +36,15 @@ nav,
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  height: 75px;
+  margin: 0 10px;
+
+  position: sticky;
+  top: 10px;
+  z-index: 1;
+  
+  background-color: lightgrey;
+  border-radius: 20px;
 }
 
 .nav-links {
@@ -52,7 +60,7 @@ a {
 }
 
 a:hover {
-  color: grey;
+  color: white;
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
@@ -149,8 +157,8 @@ a:hover {
 /* SECTIONS */
 
 section {
-  padding-top: 4vh;
-  height: 96vh;
+  padding-top: 0;
+  height: 644px;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -162,11 +170,11 @@ section {
 
 /* PROFILE SECTION */
 
-#profile {
+#home {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  height: 620px;
 }
 
 .section__pic-container {
@@ -341,8 +349,44 @@ section {
 
 /* EXPERIENCE SECTION */
 
-#experience {
+.para {
+  color: rgb(85, 85, 85);
+  display: flex;
+  justify-content: center;
+}
+
+.experience {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 10rem;
+  width: 1199px;
+  height: 644px;
+  min-height: fit-content;
+}
+
+.listing_start {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 120px;
+}
+
+.skills p {
+  border-bottom: 2px solid rgba(45, 46, 50, .5);
+  margin-bottom: 20px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  font-weight: 600;
+}
+
+.listOf ul li {
+  list-style: none;
+}
+
+.skill_topics {
+  display: flex;
+  justify-content: center;
 }
 
 .experience-sub-title {
@@ -365,18 +409,6 @@ section {
   flex-direction: row;
   gap: 2.5rem;
   justify-content: space-around;
-}
-
-article {
-  display: flex;
-  width: 10rem;
-  justify-content: flex-start;
-  /* justify-content: space-around; */
-  gap: 0.5rem;
-}
-
-article .icon {
-  cursor: default;
 }
 
 /* PROJECTS SECTION */
@@ -410,9 +442,11 @@ article .icon {
 
 #contact {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   flex-direction: column;
-  height: 70vh;
+  height: 490px;
+  /* height: 300px; */
+  padding-top: 60px;
 }
 
 .contact-info-upper-container {
@@ -438,6 +472,10 @@ article .icon {
   font-size: larger;
 }
 
+.contact-info-container p a:hover {
+  color:red;
+}
+
 .contact-icon {
   cursor: default;
 }
@@ -449,10 +487,19 @@ article .icon {
 /* FOOTER SECTION */
 
 footer {
-  height: 26vh;
-  margin: 0 1rem;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  bottom: 0;
+  box-shadow: 0 -3px 3px 0 rgba(51, 49, 49, 0.15);
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
 }
 
-footer p {
+/* footer p {
   text-align: center;
-}
+} */
