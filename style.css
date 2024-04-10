@@ -47,6 +47,11 @@ nav {
   border-radius: 20px;
 }
 
+#desktop-nav {
+  background: #ffffff12;
+  backdrop-filter: blur(10px);
+}
+
 .nav-links {
   gap: 2rem;
   list-style: none;
@@ -59,11 +64,15 @@ a {
   text-decoration-color: white;
 }
 
-a:hover {
-  color: white;
+.nav-links li a:hover {
+  color: red;
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
+
+  text-shadow: 0 0 8px white,
+               0 0 10px #f70800,
+                0 0 12px #f15353;
 }
 
 .logo {
@@ -407,9 +416,9 @@ section {
 .project-slider {
   width: 100%;
   height: 550px;
-  box-shadow: 0 0 3px grey;
-  /* margin: auto;
-  margin-top: 100px; */
+  border: 1px inset grey;
+  border-radius: 50px;
+  box-shadow: 0 0 3px grey, 0 0 6px #b9b7b7, 0 0 9px white;
 
   /* to put all images on one another. use position RELATIVE in parent
        element and then on images use position ABSOLUTE. */
@@ -500,8 +509,11 @@ section {
 }
 
 .project-img {
+  margin-top: 10px;
   width: 921px;
   height: 400px;
+  border-radius: 10px;
+  border: 2px solid white;
 }
 
 .project-title {
@@ -589,7 +601,15 @@ section {
 }
 
 .contact-info-container p a:hover {
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
   color:red;
+  border: 1px solid black;
+  text-shadow: 0 0 8px white,
+               0 0 10px #f70800,
+                0 0 12px #f15353;
 }
 
 .contact-icon {
