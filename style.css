@@ -41,7 +41,7 @@ nav {
 
   position: sticky;
   top: 10px;
-  z-index: 1;
+  z-index: 2;
   
   background-color: lightgrey;
   border-radius: 20px;
@@ -327,7 +327,7 @@ section {
 }
 
 .details-container {
-  padding: 1.5rem;
+  /* padding: 1.5rem; */
   flex: 1;
   background: white;
   border-radius: 2rem;
@@ -389,53 +389,169 @@ section {
   justify-content: center;
 }
 
-.experience-sub-title {
-  color: rgb(85, 85, 85);
-  font-weight: 600;
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
-}
-
 .experience-details-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-.article-container {
-  display: flex;
-  text-align: initial;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.5rem;
-  justify-content: space-around;
-}
-
 /* PROJECTS SECTION */
 
 #projects {
   position: relative;
+  height: 750px;
 }
 
-.color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+/* new Project section css codes */
+
+.project-slider {
+  width: 100%;
+  height: 550px;
+  box-shadow: 0 0 3px grey;
+  /* margin: auto;
+  margin-top: 100px; */
+
+  /* to put all images on one another. use position RELATIVE in parent
+       element and then on images use position ABSOLUTE. */
+  position: relative;
+
+  /* after position: relative and absolute, all images shown into A ROW.
+       after using OVERFLOW HIDDEN, we get to see only one image on web and 
+       rest will be behind that image. */
+  overflow: hidden;
+}
+
+.project-slider .slide {
+  width: 100%;
+  height: 100%;
+
+  /* to put all images on one another. use position RELATIVE in parent
+       element and then on images use position ABSOLUTE. */
+  position: absolute;
+
+  transition: 1s;
+}
+
+/* .nav {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.nav button {
+  font-size: 25px;
+  padding: 5px;
+} */
+
+.slider-next {
+  position: relative;
+  z-index: 1;
+  border: none;
+  background: none;
+  font-size: 45px;
+  font-weight: bold;
+  color: #0c0c0c;
+  border-radius: 50%;
+  width: 46px;
+  top: 31%;
+  left: 990px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  /* background-color: #afcdfff0; */
+  border: 1px white;
+  border-style: outset;
+}
+
+.slider-prev {
+  position: relative;
+  z-index: 1;
+  border: none;
+  background: none;
+  font-size: 45px;
+  font-weight: bold;
+  color: #0c0c0c;
+  border-radius: 50%;
+  width: 46px;
+  top: 31%;
+  right: -110px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  /* background-color: #afcdfff0; */
+  border: 1px white;
+  border-style: inset;
+}
+
+.slider-prev:hover,
+.slider-next:hover {
+  text-shadow: 0 0 8px rgb(255, 255, 255),
+               0 0 12px #dfdfd6,
+                0 0 16px #ffffff;
+
+  /* display: inline-block;
+  animation: flip 1s ease-in-out; */
+}
+
+@keyframes flip {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
 }
 
 .project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  width: 921px;
+  height: 400px;
 }
 
 .project-title {
-  margin: 1rem;
-  color: black;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.75rem;
 }
 
-.project-btn {
-  color: black;
+.btn-container {
+  height: 54px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btnHov-1 {
+  font-size: 20px;
+  border: 1px solid #000000;
   border-color: rgb(163, 163, 163);
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 120px;
+  border-radius: 2rem;
+  background: black;
+  color: white;
+}
+
+.btnHov-2:hover {
+  cursor: pointer;
+  background: black;
+  color: white;
+}
+
+.btnHov-1:hover {
+  cursor: pointer;
+  background: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.btnHov-2 {
+  font-size: 20px;
+  border: 1px solid #000000;
+  border-color: rgb(163, 163, 163);
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 150px;
+  border-radius: 2rem;
 }
 
 /* CONTACT */

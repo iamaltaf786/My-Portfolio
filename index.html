@@ -225,8 +225,11 @@
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
+        <!-- new project container -->
+
+        <div class="project-slider">
+          <!-- Project-1 -->
+          <div class="details-container color-container slide">
             <div class="article-container">
               <img
                 src="./assets/pro-1.png"
@@ -237,20 +240,21 @@
             <h2 class="experience-sub-title project-title">Basic Calculator</h2>
             <div class="btn-container">
               <button
-                class="btn btn-color-2 project-btn"
+                class="btn btn-color-2 project-btn btnHov-1"
                 onclick="location.href='https://github.com/iamaltaf786/Calculator-Project'"
               >
                 Github
               </button>
               <button
-                class="btn btn-color-2 project-btn"
+                class="btn btn-color-2 project-btn btnHov-2"
                 onclick="location.href='https://iamaltaf786.github.io/Calculator-Project/'"
               >
                 Live Demo
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
+          <!-- Project-2 -->
+          <div class="details-container color-container slide">
             <div class="article-container">
               <img
                 src="./assets/pro-2.png"
@@ -261,20 +265,21 @@
             <h2 class="experience-sub-title project-title">Resume Maker</h2>
             <div class="btn-container">
               <button
-                class="btn btn-color-2 project-btn"
+                class="btn btn-color-2 project-btn btnHov-1"
                 onclick="location.href='https://github.com/iamaltaf786/Resume_Maker_web'"
               >
                 Github
               </button>
               <button
-                class="btn btn-color-2 project-btn"
+                class="btn btn-color-2 project-btn btnHov-2"
                 onclick="location.href='https://iamaltaf786.github.io/Resume_Maker_web/'"
               >
                 Live Demo
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
+          <!-- Project-3 -->
+          <div class="details-container color-container slide">
             <div class="article-container">
               <img
                 src="./assets/weather-1.png"
@@ -285,19 +290,22 @@
             <h2 class="experience-sub-title project-title">Weather App</h2>
             <div class="btn-container">
               <button
-                class="btn btn-color-2 project-btn"
+                class="btn btn-color-2 project-btn btnHov-1"
                 onclick="location.href='https://github.com/iamaltaf786/Weather-App?tab=readme-ov-file'"
               >
                 Github
               </button>
               <button
-                class="btn btn-color-2 project-btn"
+                class="btn btn-color-2 project-btn btnHov-2"
                 onclick="location.href='https://iamaltaf786.github.io/Weather-App/'"
               >
                 Live Demo
               </button>
             </div>
           </div>
+
+          <button onclick="goNext()" class="slider-next">></button>
+          <button onclick="goPrev()" class="slider-prev"><</button>
         </div>
       </div>
       <img
