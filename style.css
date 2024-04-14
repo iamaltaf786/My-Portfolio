@@ -69,10 +69,7 @@ a {
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
-
-  text-shadow: 0 0 8px white,
-               0 0 10px #f70800,
-                0 0 12px #f15353;
+  text-shadow: 1px 1px #000;
 }
 
 .logo {
@@ -402,6 +399,17 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+.skill-topics-list ul li {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  transition: transform 0.5s ease;
+}
+
+.skill-topics-list ul li img:hover {
+    transform: scale(1.2);
 }
 
 /* PROJECTS SECTION */
