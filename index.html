@@ -49,8 +49,8 @@
     </nav>
 
     <!-- Home Section -->
-    <section id="home">
-      <div class="section__pic-container">
+    <section id="home" class="home">
+      <div class="home_profile_img">
         <img
           id="myImage"
           src="./assets/Altaf_Hussain_1_1.jpeg"
@@ -352,8 +352,10 @@
             </div>
           </div>
 
-          <button onclick="goNext()" class="slider-next">></button>
-          <button onclick="goPrev()" class="slider-prev"><</button>
+          <div class="slider-box">
+            <button onclick="goPrev()" class="slider-prev"><</button>
+            <button onclick="goNext()" class="slider-next">></button>
+          </div>
         </div>
       </div>
       <img
