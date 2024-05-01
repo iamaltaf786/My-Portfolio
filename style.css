@@ -171,7 +171,7 @@ section {
 
 /* PROFILE SECTION */
 
-#home {
+.home {
   display: flex;
   justify-content: center;
   gap: 5rem;
@@ -191,6 +191,7 @@ section {
 }
 
 #myImage {
+  width: 90%;
   border: 3px solid #2d2e32;
   animation: myImage 8s ease-in-out infinite;
   border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;

@@ -15,9 +15,9 @@
   #hamburger-nav {
     display: flex;
   }
-  #experience,
+  .experience,
   .experience-details-container {
-    margin-top: 2rem;
+    margin-top: 32px;
   }
   #profile,
   .section-container {
@@ -34,15 +34,16 @@
     margin: 0 5%;
   }
   .section__pic-container {
-    width: 275px;
-    height: 275px;
+    width: 345px;
+    height: 330px;
     margin: 0 auto 2rem;
   }
-  .about-containers {
-    margin-top: 0;
+
+  .about-details-container {
+    padding: 40px;
   }
 }
-
+/* max-width: 600px */
 @media screen and (max-width: 600px) {
   #contact,
   footer {
@@ -122,5 +123,136 @@
 
   .skill_topics p {
     margin-bottom: 10px;
+  }
+}
+
+
+
+@media screen and (max-width: 426px) {
+  #contact,
+  footer {
+    height: 40vh;
+  }
+  #profile {
+    height: 570px;
+    margin-bottom: 0;
+  }
+  article {
+    font-size: 1rem;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section__pic-container {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto -4rem;
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+  }
+  .title {
+    font-size: 1.9rem;
+  }
+  .text-container {
+    text-align: justify;
+  }
+
+  /* home */
+  .home {
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: unset;
+    gap: unset;
+  }
+  .home_profile_img {
+    height: 350px;
+    width: auto;
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  .section__text p {
+    font-weight: 400;
+  }
+
+  /* About */
+  #about {
+    margin-top: 30px;
+  }
+
+
+  /* experience section */
+  .experience {
+    margin: 0;
+    width: 100%;
+    height: 500px;
+  }
+
+  .listing_start {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .listOf {
+    margin-top: 20px;
+  }
+
+  .listOf ul li {
+    margin-bottom: 15px;
+  }
+
+  .listOf img {
+    width: 40px;
+    height: auto;
+  }
+
+  .listing_start h1 {
+    margin: 20px;
+  }
+
+  .skill_topics p {
+    margin-bottom: 10px;
+  }
+
+  .skill-topics-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Contact */
+  #contact {
+    height: 420px;
+  }
+
+  footer {
+    height: 50px;
   }
 }
