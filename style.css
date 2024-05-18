@@ -47,10 +47,10 @@ nav {
   border-radius: 20px;
 }
 
-#desktop-nav {
+/* #desktop-nav {
   background: #ffffff12;
   backdrop-filter: blur(10px);
-}
+} */
 
 .nav-links {
   gap: 2rem;
