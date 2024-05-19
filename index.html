@@ -411,7 +411,7 @@
             class="icon contact-icon email-icon"
             data-aos="zoom-in"
           />
-          <p data-aos="fade-right">
+          <p data-aos="zoom-in">
             <a href="mailto:examplemail@gmail.com">hussainaltaf028@gmail.com</a>
           </p>
         </div>
@@ -422,7 +422,7 @@
             class="icon contact-icon"
             data-aos="zoom-in"
           />
-          <p data-aos="fade-right">
+          <p data-aos="zoom-in">
             <a href="https://www.linkedin.com/in/altaf-hussain-10640a203/"
               >LinkedIn</a
             >
@@ -446,7 +446,10 @@
     <!-- Animation OnScroll Library -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        offset: 100,
+        duration: 1000,
+      });
     </script>
   </body>
 </html>
