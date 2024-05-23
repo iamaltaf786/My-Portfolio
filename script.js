@@ -1,3 +1,19 @@
+
+// On scroll navbar hide script.
+var lastScrollTop = 0;
+    navbar = document.getElementById("desktop-nav");
+window.addEventListener("scroll", function(){
+  var scrollTop = window.scrollY || document.documentElement.scrollTop;
+  if(scrollTop > lastScrollTop){
+    navbar.style.top = "-75px";
+  } else {
+    navbar.style.top = "0";
+  }
+  lastScrollTop = scrollTop;
+})
+
+
+
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
   const icon = document.querySelector(".hamburger-icon");
