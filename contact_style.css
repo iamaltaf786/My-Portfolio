@@ -37,6 +37,7 @@ form input, form textarea {
     outline: none;
     background: #f5f5f5;
     font-size: 16px;
+    resize: none;
 }
 
 form button {
